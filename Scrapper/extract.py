@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+
 pd.set_option('display.max_colwidth', -1)
 pd.set_option('display.float_format', '{:.10f}'.format)
 

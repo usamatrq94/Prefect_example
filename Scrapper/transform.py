@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from scrapper import get_exchange_rate, top_gainers_today
+from extract import get_exchange_rate
 
 pd.set_option('display.float_format', '{:.10f}'.format)
 pd.set_option('display.max_colwidth', -1)
@@ -35,7 +35,3 @@ def transform_data(dataframe):
     dataframe = convert_to_int(dataframe, 'Volume')
     dataframe = convert_to_aud(dataframe)
     return dataframe
-
-data = top_gainers_today()
-data = transform_data(data)
-print(data)
