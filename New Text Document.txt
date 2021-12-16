@@ -1,0 +1,2 @@
+* - Setting user execution policy
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
